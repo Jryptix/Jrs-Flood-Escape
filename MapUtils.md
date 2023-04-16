@@ -1,7 +1,16 @@
 # JFE Map Making - MapScript
 MapUtils is the main utilties used to function in JFE maps. For short, it is called 'utils'. 
 
-## Methods
+## Properties
+### utils.Map: model
+```
+local map = utils.Map
+```
+This property references your map model.
+
+-----------------------------------------------------
+
+## Functions
 ### utils:Move(part: `PVInstance`, risevector: `Vector3`, interval: `number`): nil
 
 Demonstration:
