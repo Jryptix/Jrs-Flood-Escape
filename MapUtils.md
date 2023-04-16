@@ -52,3 +52,13 @@ utils:ChangeState(map.MovingParts.Liquids._Liquid2, "acid")
 This function allows to change the state of the liquid, these being `water`, `acid`, `lava` and `custom`.
 
 -----------------------------------------------------
+
+### utils:Alert(message: `string`, messageColor: `Color3`): nil
+
+Demonstration:
+```lua
+utils:Alert("Hello World!", Color3.fromRGB(255,255,255))
+```
+This function allows you to send alerts to all the clients during the map playthrough.
+
+-----------------------------------------------------
