@@ -40,6 +40,6 @@ Demonstration:
 ```lua
 utils:ChangeState(map.MovingParts.Liquids._Liquid2, "acid")
 ```
-This functions allows to change the state of the liquid, these being `water`, `acid`, `lava` and `custom`.
+This function allows to change the state of the liquid, these being `water`, `acid`, `lava` and `custom`.
 
 -----------------------------------------------------
