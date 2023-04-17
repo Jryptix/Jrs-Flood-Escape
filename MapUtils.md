@@ -2,7 +2,7 @@
 MapUtils is the main utilties used to function in JFE maps. For short, it is called 'utils'. 
 
 ## Properties
-### utils.Map: model
+### utils.Map: [`Model`](https://create.roblox.com/docs/reference/engine/classes/Model)
 ```
 local map = utils.Map
 ```
@@ -11,7 +11,7 @@ This property references your map model.
 -----------------------------------------------------
 
 ## Functions
-### utils:Move(part: `PVInstance`, risevector: `Vector3`, interval: `number`): nil
+### utils:Move(part: [`PVInstance`](https://create.roblox.com/docs/reference/engine/classes/PVInstance), risevector: [`Vector3`](https://create.roblox.com/docs/reference/engine/datatypes/Vector3), interval: `number`): nil
 
 Demonstration:
 ```lua
@@ -21,7 +21,7 @@ This function allows to move a part by a number of studs based on the Vector3 va
 
 -----------------------------------------------------
 
-### utils:MoveLocal(part: [`PVInstance`](https://create.roblox.com/docs/reference/engine/classes/PVInstance), risevector: `Vector3`, interval: `number`): nil
+### utils:MoveLocal(part: [`PVInstance`](https://create.roblox.com/docs/reference/engine/classes/PVInstance), risevector: [`Vector3`](https://create.roblox.com/docs/reference/engine/datatypes/Vector3), interval: `number`): nil
 
 Demonstration:
 ```lua
@@ -31,7 +31,7 @@ This function allows to move a part by a number of studs based on the Vector3 va
 
 -----------------------------------------------------
 
-### utils:ButtonEvent(buttonNumber: `number`): RBXScriptSignal?
+### utils:ButtonEvent(buttonNumber: `number`): [RBXScriptSignal](https://create.roblox.com/docs/reference/engine/datatypes/RBXScriptSignal)?
 
 Demonstration:
 ```lua
