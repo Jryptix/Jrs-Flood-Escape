@@ -21,7 +21,7 @@ This function allows to move a part by a number of studs based on the Vector3 va
 
 -----------------------------------------------------
 
-### utils:MoveLocal(part: `PVInstance`, risevector: `Vector3`, interval: `number`): nil
+### utils:MoveLocal(part: [`PVInstance`](https://create.roblox.com/docs/reference/engine/classes/PVInstance), risevector: `Vector3`, interval: `number`): nil
 
 Demonstration:
 ```lua
@@ -43,7 +43,7 @@ This function is called when a specific button is pressed which depends on the b
 
 -----------------------------------------------------
 
-### utils:ChangeState(part: `BasePart`, liquidState: `string`): nil
+### utils:ChangeState(part: [`BasePart`](https://create.roblox.com/docs/reference/engine/classes/BasePart), liquidState: `string`): nil
 
 Demonstration:
 ```lua
@@ -53,7 +53,7 @@ This function allows to change the state of the liquid, these being `water`, `ac
 
 -----------------------------------------------------
 
-### utils:Alert(message: `string`, messageColor: `Color3`): nil
+### utils:Alert(message: `string`, messageColor: [`Color3`](https://create.roblox.com/docs/reference/engine/datatypes/Color3)): nil
 
 Demonstration:
 ```lua
