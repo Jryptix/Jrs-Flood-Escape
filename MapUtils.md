@@ -62,3 +62,25 @@ utils:Alert("Hello World!", Color3.fromRGB(255,255,255))
 This function allows you to send alerts to all the clients during the map playthrough.
 
 -----------------------------------------------------
+
+### utils:ToggleCinematic(active: `boolean`): nil
+
+Demonstration:
+```lua
+utils:ToggleCinematic(true)
+```
+This function allows you to toggle cinematic bar lines during your map's gameplay. If called from LocalMapScript, it will only run for the player only whose LocalScript is being called from the client.
+
+-----------------------------------------------------
+
+### utils:GetPlayersInGame(): {[`Player`](https://create.roblox.com/docs/reference/engine/classes/Player)}
+
+Demonstration:
+```lua
+for i, player in pairs(utils:GetPlayersInGame()) do
+  print(player)
+end
+```
+This function allows you to get the current players in the round while playing the map.
+
+-----------------------------------------------------
