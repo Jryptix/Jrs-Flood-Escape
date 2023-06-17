@@ -31,7 +31,7 @@ This function allows to move a part by a number of studs based on the Vector3 va
 
 -----------------------------------------------------
 
-### utils:ButtonEvent(buttonIndex: `number`): [RBXScriptSignal](https://create.roblox.com/docs/reference/engine/datatypes/RBXScriptSignal)?
+### utils:ButtonEvent(buttonIndex: `number` | `string`): [RBXScriptSignal](https://create.roblox.com/docs/reference/engine/datatypes/RBXScriptSignal)?
 
 Demonstration:
 ```lua
