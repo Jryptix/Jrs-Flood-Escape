@@ -31,15 +31,20 @@ This function allows to move a part by a number of studs based on the Vector3 va
 
 -----------------------------------------------------
 
-### utils:ButtonEvent(buttonNumber: `number`): [RBXScriptSignal](https://create.roblox.com/docs/reference/engine/datatypes/RBXScriptSignal)?
+### utils:ButtonEvent(buttonIndex: `number`): [RBXScriptSignal](https://create.roblox.com/docs/reference/engine/datatypes/RBXScriptSignal)?
 
 Demonstration:
 ```lua
-utils:ButtonEvent(2):Connect(function()
+--Example #1
+utils:ButtonEvent(2):Connect(function(player)
   --Line of code when button #2 is pressed
 end)
+
+--Example #2
+utils:ButtonEvent("3A"):Wait() --This would yield the MapScript until button #3A is pressed
 ```
-This function is called when a specific button is pressed which depends on the button number.
+This function is called when a specific button is pressed which depends on the button index. The index being a number if it is a normal button or a string if it is a pathbutton.
+There is a parameter of the player pressing the button.
 
 -----------------------------------------------------
 
@@ -83,5 +88,15 @@ for i, player in pairs(utils:GetPlayersInGame()) do
 end
 ```
 This function allows you to get a table of players during the round in the map.
+
+-----------------------------------------------------
+
+### utils:Teleport(touchedPart: [`BasePart`](https://create.roblox.com/docs/reference/engine/classes/BasePart), destination, [`BasePart`](https://create.roblox.com/docs/reference/engine/classes/BasePart) | [`Attachment`](https://create.roblox.com/docs/reference/engine/classes/Attachment)): nil
+
+Demonstration:
+```lua
+utils:Teleport(map.Teleporters.ExampleTeleporter, map.Teleporters.ExampleDestination)
+```
+This function allows you to teleport players throughout the map if they are in the zone of a specific part.
 
 -----------------------------------------------------
