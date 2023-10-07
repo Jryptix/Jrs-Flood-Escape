@@ -10,6 +10,26 @@ This property references your map model.
 
 -----------------------------------------------------
 
+### utils.PlayerSurvived: [`RBXScriptSignal`](https://create.roblox.com/docs/reference/engine/datatypes/RBXScriptSignal)
+```
+utils.PlayerSurvived:Connect(function(player: Player)
+  print(player.Name.." has survived.")
+end)
+```
+This property is a signal for when a player survives in the map.
+
+-----------------------------------------------------
+
+### utils.MapEnding: [`RBXScriptSignal`](https://create.roblox.com/docs/reference/engine/datatypes/RBXScriptSignal)
+```
+utils.MapEnding:Connect(function()
+  print("The round has ended!")
+end)
+```
+This property is a signal for when the round has ended.
+
+-----------------------------------------------------
+
 ## Functions
 ### utils:Move(part: [`PVInstance`](https://create.roblox.com/docs/reference/engine/classes/PVInstance), risevector: [`Vector3`](https://create.roblox.com/docs/reference/engine/datatypes/Vector3), interval: `number`): nil
 
@@ -78,6 +98,18 @@ for i, player in pairs(utils:GetPlayersInGame()) do
 end
 ```
 This function allows you to get a table of players during the round in the map.
+
+-----------------------------------------------------
+
+### utils:GetModule(name: string): any
+
+Demonstration:
+```lua
+local camera = utils:GetModule("Camera")
+local content = utils:GetModule("Content")
+local janitor = utils:GetModule("Janitor")
+```
+This function allows you to get a module listing all its functions and widespread freedom to use it.
 
 -----------------------------------------------------
 
