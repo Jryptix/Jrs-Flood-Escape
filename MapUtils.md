@@ -68,16 +68,6 @@ This function allows you to send alerts to all the clients during the map playth
 
 -----------------------------------------------------
 
-### utils:ToggleCinematic(active: boolean): nil
-
-Demonstration:
-```lua
-utils:ToggleCinematic(true)
-```
-This function allows you to toggle cinematic bars throughout the map for every player during the round. If called from LocalMapScript, it only do this for the player running the LocalScript.
-
------------------------------------------------------
-
 
 ### utils:GetPlayersInGame(): {[`Player`](https://create.roblox.com/docs/reference/engine/classes/Player)}
 
