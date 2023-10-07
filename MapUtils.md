@@ -25,7 +25,7 @@ This function allows to move a part by a number of studs based on the Vector3 va
 
 Demonstration:
 ```lua
-utils:Move(map.MovingParts.Liquids._Liquid1, Vector3.new(0, 40, 0), 5)
+utils:MoveLocal(map.MovingParts.Liquids._Liquid1, Vector3.new(0, 40, 0), 5)
 ```
 This function allows to move a part by a number of studs based on the Vector3 values provided (X, Y, Z), similar to utils:Move but it moves based on the part's orientation.
 
