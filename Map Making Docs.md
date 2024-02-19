@@ -40,6 +40,9 @@ This is a placeholder value to put the name of your map. This is the most necess
 ## [Max Time](https://create.roblox.com/docs/reference/engine/classes/NumberValue)
 This is a placeholder value for the max time you can put in your map. The max time is how long you can be in the map for.
 
+## [Privacy](https://create.roblox.com/docs/reference/engine/classes/StringValue)
+This is a placeholder value to set the playability either to `Public`, `Friends Only` or `Owner Only` depending if you want to prevent other players from loading your map.
+
 ## [Button](https://create.roblox.com/docs/reference/engine/classes/Configuration)
 This is a configuration folder that is provided to customize how buttons are managed within the map.
 
