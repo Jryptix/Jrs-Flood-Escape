@@ -21,10 +21,11 @@ Here is a list of difficulties:
 - `[1]` - Easy
 - `[2]` - Normal
 - `[3]` - Hard
-- `[4]` - Insane
-- `[5]` - Extreme
-- `[6]` - Divine
-- `[7]` - Valiant
+- `[4]` - Difficult
+- `[5]` - Insane
+- `[6]` - Intense
+- `[7]` - Divine
+- `[8]` - Perpetual
 - `[Others]` - Invalid difficulty
 
 If a number is put that isn't in the list, it will be ranked as Invalid difficulty \[x].
