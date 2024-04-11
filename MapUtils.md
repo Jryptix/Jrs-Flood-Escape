@@ -113,11 +113,15 @@ This function allows you to get a module listing all its functions and widesprea
 
 -----------------------------------------------------
 
-### utils:Teleport(touchedPart: [`BasePart`](https://create.roblox.com/docs/reference/engine/classes/BasePart), destination, [`BasePart`](https://create.roblox.com/docs/reference/engine/classes/BasePart) | [`Attachment`](https://create.roblox.com/docs/reference/engine/classes/Attachment)): nil
+### utils:Teleport(touchedPart: [`BasePart`](https://create.roblox.com/docs/reference/engine/classes/BasePart), destination: [`BasePart`](https://create.roblox.com/docs/reference/engine/classes/BasePart) | [`Attachment`](https://create.roblox.com/docs/reference/engine/classes/Attachment), runFunction: ({[`Player`](https://create.roblox.com/docs/reference/engine/classes/Player)}) -> ()): nil
 
 Demonstration:
 ```lua
-utils:Teleport(map.Teleporters.ExampleTeleporter, map.Teleporters.ExampleDestination)
+utils:Teleport(map.Teleporters.ExampleTeleporter, map.Teleporters.ExampleDestination, function(teleportedPlayers)
+  for i, player in ipairs(teleportedPlayers) do
+    print(player.Name.." has teleported!")
+  end
+end)
 ```
 This function allows you to teleport players throughout the map if they are in the zone of a specific part.
 
